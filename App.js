@@ -16,7 +16,6 @@ import {
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import ListItem from "./components/ListItem";
 import Chart from "./components/Chart";
-import { SAMPLE_DATA } from "./assets/data/sampleData";
 import { getMarketData } from "./services/cryptoService";
 
 const ListHeader = () => (
