@@ -1,4 +1,4 @@
-import { useRef, useMemo, useState, useCallback } from "react";
+import { useRef, useMemo, useState, useCallback, useEffect } from "react";
 import { StatusBar } from "expo-status-bar";
 import {
   FlatList,
@@ -7,6 +7,7 @@ import {
   View,
   SafeAreaView,
   Button,
+  Platform,
 } from "react-native";
 import {
   BottomSheetModal,
@@ -14,9 +15,9 @@ import {
 } from "@gorhom/bottom-sheet";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import ListItem from "./components/ListItem";
-
-import { SAMPLE_DATA } from "./assets/data/sampleData";
 import Chart from "./components/Chart";
+import { SAMPLE_DATA } from "./assets/data/sampleData";
+import { getMarketData } from "./services/cryptoService";
 
 const ListHeader = () => (
   <>
@@ -28,9 +29,19 @@ const ListHeader = () => (
 );
 
 export default function App() {
+  const [data, setData] = useState([]);
   const [selectedCoinData, setSelectedCoinData] = useState(null);
   const bottomSheetModalRef = useRef(null);
   const snapPoints = useMemo(() => ["45%"], []);
+
+  useEffect(() => {
+    const fetchMarketData = async () => {
+      const marketData = await getMarketData();
+      setData(marketData);
+    };
+
+    fetchMarketData();
+  }, []);
 
   const openModal = useCallback((item) => {
     setSelectedCoinData(item);
@@ -46,7 +57,7 @@ export default function App() {
       <SafeAreaView style={styles.container}>
         <FlatList
           keyExtractor={(item) => item.id}
-          data={SAMPLE_DATA}
+          data={data}
           renderItem={({ item }) => (
             <ListItem
               name={item.name}
@@ -98,6 +109,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
+    paddingTop: Platform.OS === "android" ? 30 : 0,
+    paddingBottom: Platform.OS === "android" ? 10 : 0,
   },
   titleWrapper: {
     marginTop: 40,
