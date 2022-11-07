@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "CoinMarket",
+    "name": "Coin Market",
     "slug": "CoinMarket",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.jpg",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,8 +19,9 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "ayp.Coinmarket",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.jpg",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },

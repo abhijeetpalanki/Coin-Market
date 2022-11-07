@@ -344,7 +344,7 @@
     "@babel/helper-plugin-utils" "^7.18.9"
     "@babel/plugin-syntax-export-default-from" "^7.18.6"
 
-"@babel/plugin-proposal-export-namespace-from@^7.18.9":
+"@babel/plugin-proposal-export-namespace-from@^7.17.12", "@babel/plugin-proposal-export-namespace-from@^7.18.9":
   version "7.18.9"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-export-namespace-from/-/plugin-proposal-export-namespace-from-7.18.9.tgz#5f7313ab348cdb19d590145f9247540e94761203"
   integrity sha512-k1NtHyOMvlDDFeb9G5PhUXuGj8m/wiwojgQVEhJ/fsVsMCpLyOP4h0uGEjYJKrRI+EVPlb5Jk+Gt9P97lOGwtA==
@@ -1144,7 +1144,7 @@
     uuid "^3.4.0"
     wrap-ansi "^7.0.0"
 
-"@expo/code-signing-certificates@^0.0.2":
+"@expo/code-signing-certificates@0.0.2", "@expo/code-signing-certificates@^0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@expo/code-signing-certificates/-/code-signing-certificates-0.0.2.tgz#65cd615800e6724b54831c966dd1a90145017246"
   integrity sha512-vnPHFjwOqxQ1VLztktY+fYCfwvLzjqpzKn09rchcQE7Sdf0wtW5fFtIZBEFOOY5wasp8tXSnp627zrAwazPHzg==
@@ -3131,6 +3131,11 @@ expo-constants@~13.2.2, expo-constants@~13.2.4:
     "@expo/config" "~7.0.0"
     uuid "^3.3.2"
 
+expo-eas-client@~0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/expo-eas-client/-/expo-eas-client-0.3.0.tgz#21383fc95a52e71e13c7276456db20388fefcf95"
+  integrity sha512-dBD00lJ629ayh5abbmgn6I1Z5NOaWM1iea2ODLd/EF1ZcS1P3yiPm6blpvL/tD+uewL8gxxmla/Ac+SiDdYAYA==
+
 expo-error-recovery@~3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/expo-error-recovery/-/expo-error-recovery-3.2.0.tgz#3a4543382904a5e70829cb41d7fc0f022c2bef6e"
@@ -3151,10 +3156,22 @@ expo-font@~10.2.1:
   dependencies:
     fontfaceobserver "^2.1.0"
 
+expo-json-utils@~0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/expo-json-utils/-/expo-json-utils-0.3.0.tgz#0c4a0195ee2bbde02cbb5f4d384d1cb63bea7493"
+  integrity sha512-ceo0pWFJqRAsNjZWX3rVDhy+NDzmrBNFOdvW+HE4EHqlt+OEUu9INIYKO8fU+g3ifI0VcKqHfvvj5wKsSpvPBw==
+
 expo-keep-awake@~10.2.0:
   version "10.2.0"
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-10.2.0.tgz#46f04740bccd321732bbbed93491e2076d5dbbd7"
   integrity sha512-kIRtO4Hmrvxh4E45IPWG/NiUZsuRe1AQwBT09pq+kx8nm6tUS4B9TeL6+1NFy+qVBLbGKDqoQD5Ez7XYTFtBeQ==
+
+expo-manifests@~0.3.0:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/expo-manifests/-/expo-manifests-0.3.1.tgz#52c3ef41d3b1958039be0434363e6499c773aaf6"
+  integrity sha512-zv2a4pzhbvxVjrTO4XEiP5THt4RwtxyJjfixFhDNfHtDQR7fS4h9sZSGX9ind+IS5SQJQ2ykfVAi8xnwP6zHaw==
+  dependencies:
+    expo-json-utils "~0.3.0"
 
 expo-modules-autolinking@0.10.3:
   version "0.10.3"
@@ -3179,6 +3196,34 @@ expo-status-bar@~1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.4.0.tgz#c0317de2c53878340f4b4f00ff7e4ba14399a7fb"
   integrity sha512-vh98g8qMIjig/2XTBsoAWS6Vo2dIIwDWjB3/GiuZ9Lazpxc9GO/APfJ4dar7MibzIDUKIrjotrcL6rLdPH13Ew==
+
+expo-structured-headers@~2.2.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/expo-structured-headers/-/expo-structured-headers-2.2.1.tgz#739f969101de6bead921eee59e5899399ad67715"
+  integrity sha512-nY6GuvoS/U5XdhfBNmvXGRoGzIXywXpSZs2wdiP+FbS79P9UWyEqzgARrBTF+6pQxUVMs6/vdffxRpwhjwYPug==
+
+expo-updates-interface@~0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/expo-updates-interface/-/expo-updates-interface-0.7.0.tgz#f4f03b61dbdd949cac9fb44e250e1162ba177650"
+  integrity sha512-saThnbrYDSjKxfMFFguAvh5o5KGabvAOHItkJRwq2L3c0T/3q26Q0kM83880h/+TTtAVsl1+Vhny9d+ImD3yvQ==
+
+expo-updates@~0.14.6:
+  version "0.14.6"
+  resolved "https://registry.yarnpkg.com/expo-updates/-/expo-updates-0.14.6.tgz#bf2318dd58f1c293c0f7e463a6f942e3ca511a79"
+  integrity sha512-JmE3nsbL8cUAV2slhIqqNIG+jEYCJJvPzSYcUBd15s0sg0xxRbasNaEfnSIrYtZMjhl/YNwMgQzUkU6C2NtXyg==
+  dependencies:
+    "@expo/code-signing-certificates" "0.0.2"
+    "@expo/config" "~7.0.1"
+    "@expo/config-plugins" "~5.0.1"
+    "@expo/metro-config" "~0.4.0"
+    arg "4.1.0"
+    expo-eas-client "~0.3.0"
+    expo-manifests "~0.3.0"
+    expo-structured-headers "~2.2.0"
+    expo-updates-interface "~0.7.0"
+    fbemitter "^3.0.0"
+    resolve-from "^5.0.0"
+    uuid "^3.4.0"
 
 expo@~46.0.16:
   version "46.0.16"
@@ -5508,13 +5553,13 @@ react-devtools-core@4.24.0:
     shell-quote "^1.6.1"
     ws "^7"
 
-react-dom@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
-  integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
+react-dom@18.0.0:
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0.tgz#26b88534f8f1dbb80853e1eabe752f24100d8023"
+  integrity sha512-XqX7uzmFo0pUceWFCt7Gff6IyIMzFUn7QMZrbrQfGxtaxXZIcGQzoNpRLE3fQLnS4XzLLPMZX2T9TRcSrasicw==
   dependencies:
     loose-envify "^1.1.0"
-    scheduler "^0.23.0"
+    scheduler "^0.21.0"
 
 "react-is@^16.12.0 || ^17.0.0 || ^18.0.0":
   version "18.2.0"
@@ -5548,10 +5593,10 @@ react-native-codegen@^0.69.2:
     jscodeshift "^0.13.1"
     nullthrows "^1.1.1"
 
-react-native-gesture-handler@^2.7.1:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-2.7.1.tgz#c109d33c38cb182fafcda13012b77c6cac43b127"
-  integrity sha512-Rnak7U4v3ZB+vjVghv5CvAGS+UfRLsXUq7Nq+FycloxZ7jUZjBo+7rPnt+EdTIE2zc2pKhQHIQKcD+IAPg2Scg==
+react-native-gesture-handler@~2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-2.5.0.tgz#61385583570ed0a45a9ed142425e35f8fe8274fb"
+  integrity sha512-djZdcprFf08PZC332D+AeG5wcGeAPhzfCJtB3otUgOgTlvjVXmg/SLFdPJSpzLBqkRAmrC77tM79QgKbuLxkfw==
   dependencies:
     "@egjs/hammerjs" "^2.0.17"
     hoist-non-react-statics "^3.3.0"
@@ -5569,11 +5614,12 @@ react-native-haptic-feedback@^1.14.0:
   resolved "https://registry.yarnpkg.com/react-native-haptic-feedback/-/react-native-haptic-feedback-1.14.0.tgz#b50f49dedda4980b3c37c5780823f753cf3ee717"
   integrity sha512-dSXZ6gAzl+W/L7BPjOpnT0bx0cgQiSr0sB3DjyDJbGIdVr4ISaktZC6gC9xYFTv2kMq0+KtbKi+dpd0WtxYZMw==
 
-react-native-reanimated@^2.11.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-2.11.0.tgz#415ef668440d1b7d8b2b36a20342b1035432dd80"
-  integrity sha512-/QnujrXSNyXasv7v8K3eu5Z4XGRYMPRa0+x0RjNr6Z5/KEuPHwrg1Xm7UZ2YSm6jCF2b1BW6ceqP/1d626gvhQ==
+react-native-reanimated@~2.9.1:
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-2.9.1.tgz#d9a932e312c13c05b4f919e43ebbf76d996e0bc1"
+  integrity sha512-309SIhDBwY4F1n6e5Mr5D1uPZm2ESIcmZsGXHUu8hpKX4oIOlZj2MilTk+kHhi05LjChoJkcpfkstotCJmPRPg==
   dependencies:
+    "@babel/plugin-proposal-export-namespace-from" "^7.17.12"
     "@babel/plugin-transform-object-assign" "^7.16.7"
     "@babel/preset-typescript" "^7.16.7"
     "@types/invariant" "^2.2.35"
@@ -5958,13 +6004,6 @@ scheduler@^0.21.0:
   version "0.21.0"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0.tgz#6fd2532ff5a6d877b6edb12f00d8ab7e8f308820"
   integrity sha512-1r87x5fz9MXqswA2ERLo0EbOAU74DpIUO090gIasYTqlVoJeMcl+Z1Rg7WHz+qtPujhS/hGIt9kxZOYBV3faRQ==
-  dependencies:
-    loose-envify "^1.1.0"
-
-scheduler@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.0.tgz#ba8041afc3d30eb206a487b6b384002e4e61fdfe"
-  integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
   dependencies:
     loose-envify "^1.1.0"
 
